@@ -291,14 +291,86 @@ footer a:hover{color:var(--apex-accent)}
   footer{flex-direction:column;gap:1rem;text-align:center}
 }
 
-/* Petits mobiles */
-@media(max-width:480px){
-  .services-grid{grid-template-columns:1fr !important;}
-  .hero{padding:6rem 1rem 3rem;}
-  /* etc. */
+/* Tablettes et petits ordinateurs portables */
+@media(max-width:768px){
+  .hero{padding:6rem 2rem 3rem}
+  .section-title{font-size:2rem}
+  .services-grid{grid-template-columns:1fr;gap:1.5rem}
+  .about-wrapper{gap:2rem}
+  .contact-wrapper{gap:2rem}
+  .process-steps::before{left:20px}
+  .step{gap:1.5rem;padding:1.5rem 0}
+  .step-marker{width:40px;height:40px;font-size:0.9rem}
+  .tech-marquee{gap:2rem}
+  .tech-marquee span{font-size:1.2rem}
+  .footer-links{flex-direction:column;gap:1rem}
 }
 
-/* Tablettes */
-@media(max-width:768px){
-  /* ajustements tablette */
+/* Smartphones (portrait) */
+@media(max-width:480px){
+  nav{padding:0.8rem 1rem}
+  .nav-logo-img{height:50px}
+  .nav-links.open{padding:1.5rem 1rem;gap:1rem}
+  .nav-links a{font-size:0.75rem;letter-spacing:1px}
+  
+  .hero{min-height:auto;padding:5rem 1rem 2rem}
+  .hero-subtitle{font-size:0.75rem;letter-spacing:2px;margin-bottom:1.5rem}
+  .section-title{font-size:1.75rem;letter-spacing:2px}
+  .hero-desc{font-size:0.95rem;margin-bottom:2rem}
+  .hero-actions{gap:1rem;flex-direction:column;width:100%}
+  .btn-primary,.btn-secondary{width:100%;padding:0.9rem 2rem;font-size:0.85rem;letter-spacing:1.5px;text-align:center}
+  .scroll-indicator{bottom:1rem}
+  .scroll-line{height:30px}
+  
+  section{padding:3rem 1rem}
+  .section-tag{font-size:0.65rem;letter-spacing:3px;gap:0.5rem}
+  .section-tag::before{width:20px}
+  .section-desc{font-size:0.9rem;margin-bottom:2rem}
+  
+  .services-grid{grid-template-columns:1fr;gap:1rem}
+  .service-card{padding:2rem 1.5rem}
+  .service-icon{width:40px;height:40px;margin-bottom:1rem}
+  .service-card h3{font-size:1.1rem;letter-spacing:1.5px}
+  .service-card p{font-size:0.85rem}
+  
+  .stats-row{flex-direction:column;gap:1.5rem}
+  .stat-number{font-size:2rem}
+  .stat-label{font-size:0.7rem}
+  
+  .process-steps::before{left:16px}
+  .step{gap:1rem;padding:1rem 0}
+  .step-marker{width:32px;height:32px;font-size:0.8rem}
+  .step h3{font-size:1rem;letter-spacing:1.5px}
+  .step p{font-size:0.85rem}
+  
+  .tech-marquee{gap:1.5rem;margin:1rem 0}
+  .tech-marquee span{font-size:1rem;letter-spacing:2px}
+  
+  .contact-wrapper{gap:2rem}
+  .contact-info{gap:1.5rem}
+  .contact-icon{width:36px;height:36px}
+  .contact-item h4{font-size:0.75rem}
+  .contact-item p{font-size:0.9rem}
+  .form-group input,.form-group textarea{padding:0.9rem;font-size:0.85rem}
+  .form-group textarea{min-height:100px}
+  .btn-submit{padding:0.9rem 1.5rem;font-size:0.8rem;letter-spacing:1.5px}
+  
+  footer{padding:1.5rem 1rem;font-size:0.7rem}
+  .footer-links{gap:0.75rem}
 }
+
+/* Très petits smartphones */
+@media(max-width:360px){
+  .nav-logo-img{height:45px}
+  .hero{padding:4.5rem 0.75rem 2rem}
+  .section-title{font-size:1.5rem}
+  .hero-subtitle{font-size:0.7rem}
+  .hero-desc{font-size:0.9rem}
+  section{padding:2.5rem 0.75rem}
+  .service-card{padding:1.5rem 1rem}
+  .step{gap:0.75rem}
+  .step-marker{width:28px;height:28px;font-size:0.75rem}
+  .process-steps::before{left:14px}
+  .contact-wrapper{gap:1.5rem}
+}
+
