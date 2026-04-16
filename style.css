@@ -290,3 +290,15 @@ footer a:hover{color:var(--apex-accent)}
   .hero-logo img{height:100px}
   footer{flex-direction:column;gap:1rem;text-align:center}
 }
+
+/* Petits mobiles */
+@media(max-width:480px){
+  .services-grid{grid-template-columns:1fr !important;}
+  .hero{padding:6rem 1rem 3rem;}
+  /* etc. */
+}
+
+/* Tablettes */
+@media(max-width:768px){
+  /* ajustements tablette */
+}
