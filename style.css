@@ -319,8 +319,7 @@ footer a:hover{color:var(--apex-accent)}
   .hero-desc{font-size:0.95rem;margin-bottom:2rem}
   .hero-actions{gap:1rem;flex-direction:column;width:100%}
   .btn-primary,.btn-secondary{width:100%;padding:0.9rem 2rem;font-size:0.85rem;letter-spacing:1.5px;text-align:center}
-  .scroll-indicator{bottom:1rem}
-  .scroll-line{height:30px}
+  .scroll-indicator{display:none}
   
   section{padding:3rem 1rem}
   .section-tag{font-size:0.65rem;letter-spacing:3px;gap:0.5rem}
